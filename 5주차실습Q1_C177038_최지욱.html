@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>5주차실습Q1_C177038_최지욱</title>
+</head>
+<body>
+    <h1>대면수업/시험 참석용 온라인 문진표 제출</h1><br>
+    <h2>1.수업/시험 일자 : 2022/03/31(목)</h2>
+    <h2>2.인적사항</h2>
+    <form> 
+        <label for = "name">2.1.이름</label>
+        <input type = "text" name = "name"><br>
+
+        <label for = "name">2.2.학번</label>
+        <input type = "text" name = "student_id"><br>
+
+        <label for = "name">2.3.생년월일</label>
+        <input type="date" id="start" name="birthday" min="1995-01-01" max="2003-12-31"><br>
+
+        <label for = "name">2.4.수강과목</label><br>
+        <label for = "class">웹프로그래밍</label>
+        <input type = "checkbox" name = "web" value="checkbox"><br>
+
+        <label for = "name">이산수학</label>
+        <input type = "checkbox" name = "math" value="checkbox"><br>
+
+        <label for = "name">객체지향프로그래밍1</label>
+        <input type = "checkbox" name = "object" value="checkbox"><br>
+
+        <label for = "name">컴퓨터구조론</label>
+        <input type = "checkbox" name = "compuet" value="checkbox"><br>
+
+        <label for = "name">게임디자인</label>
+        <input type = "checkbox" name = "game" value="checkbox"><br>
+    </form>
+
+    <h2>
+        3.문진 항목
+    </h2>
+    <form>
+        학생 본인에게 코로나 19 감염이 의심되는 아래의 증상이 있나요? <br>
+        (발열(37.5°C), 기침, 호흡곤란, 오한, 몸살, 인후통, 후각 미각 소실)
+        <input type = "radio" name = "yes" value="radio">
+        <label for = "name">예</label>   
+        <input type = "radio" name = "no" value="radio"> 
+        <label for = "name">아니오</label> 
+        <br>
+    </form>
+    <form>
+        학생 본인이 PCR 검사를 받고 기다리고 있나요?
+        <input type = "radio" name = "yes" value="radio">
+        <label for = "name">예</label>   
+        <input type = "radio" name = "no" value="radio"> 
+        <label for = "name">아니오</label> 
+    </form>
+    <h2>
+        4. 제출
+    </h2>
+    <form>
+        <input type="submit" name="submit" value="문진표 작성하기(동의함)"><br>
+    </form>
+</body>
